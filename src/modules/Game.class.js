@@ -1,5 +1,6 @@
 'use strict';
 
+/* eslint-disable */
 class Game {
   /**
    * Creates a new game instance.
@@ -39,8 +40,13 @@ class Game {
    * Resets the game.
    */
   restart() {
-    this.start();
+    // this.start();
+    // this.score = 0;
+    this.board = this.createEmptyBoard();
     this.score = 0;
+    this.status = 'playing';
+    this.addNewNumber();
+    this.addNewNumber();
   }
 
   /**
